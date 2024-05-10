@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div data-role="page" id="feedbackPage">
+    <div data-role="header">
+      <h1>Feedback Form</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+      <form id="feedbackForm">
+        <label for="feedbackToggle">Satisfied?</label>
+        <select name="feedbackToggle" id="feedbackToggle" data-role="flipswitch">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+
+        <label for="ratingSlider">Overall Satisfaction:</label>
+        <input type="range" name="ratingSlider" id="ratingSlider" min="1" max="5" value="3" data-highlight="true">
+
+        <label for="comments">Additional Comments:</label>
+        <textarea name="comments" id="comments"></textarea>
+
+        <button type="submit" data-theme="b">Submit</button>
+      </form>
+
+      <div id="feedbackResponse" style="display: none;">
+        <h2>Feedback Response</h2>
+        <p id="responseText"></p>
+      </div>
+    </div>
+
+    <div data-role="footer">
+      
+    </div>
+  </div>
+
+  <script>
+    $(document).on("pagecreate", "#feedbackPage", function() {
+      $("#feedbackForm").submit(function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        var feedbackValue = $("#feedbackToggle").val(); // Get the value of the flipped toggle
+        var ratingValue = $("#ratingSlider").val(); // Get the value of the rating slider
+        var commentsValue = $("#comments").val(); // Get the value of the comments textarea
+
+        // Update feedback response text based on the toggle value
+        var responseText = "Thank you for your feedback!";
+        if (feedbackValue === "no") {
+          responseText = "We're sorry to hear that. Please contact us for further assistance.";
+        }
+        responseText += "<br><br>";
+        responseText += "Rating: " + ratingValue + "/5<br>";
+        responseText += "Comments: " + commentsValue;
+
+        $("#responseText").html(responseText); // Set the response text
+        $("#feedbackResponse").slideDown(); // Show the feedback response
+      });
+    });
+  </script>
+</body>
+</html>

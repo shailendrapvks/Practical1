@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://example.com/your-background-image.jpg'); /* Replace the URL with the path to your background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper {
+      display: flex;
+      width: 100%;
+    }
+
+    #sidebar {
+      min-width: 250px;
+      max-width: 250px;
+      background: #343a40;
+      color: #fff;
+      transition: all 0.3s;
+    }
+
+    #sidebar .sidebar-header {
+      padding: 20px;
+      background: #343a40;
+    }
+
+    #sidebar ul.components {
+      padding: 20px 0;
+      border-bottom: 1px solid #47748b;
+    }
+
+    #sidebar ul p {
+      color: #fff;
+      padding: 10px;
+    }
+
+    #sidebar ul li a {
+      padding: 10px;
+      font-size: 1.1em;
+      display: block;
+    }
+
+    #sidebar ul li a:hover {
+      color: #7386D5;
+      background: #fff;
+    }
+
+    #sidebar ul li.active > a, a[aria-expanded="true"] {
+      color: #fff;
+      background: #6d7fcc;
+    }
+
+    #sidebar a:hover {
+      background: #6d7fcc;
+      color: #fff;
+    }
+
+    #content {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .topper-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-section,
+    .admission-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .teacher {
+      text-align: center;
+    }
+
+    .teacher img {
+      border-radius: 50%;
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <title>School Dashboard</title>
+</head>
+<body style="background-color: azure;">
+
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>School Dashboard</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#toppers">Top Students</a>
+        </li>
+        <li>
+          <a href="#courses">Courses</a>
+        </li>
+        <li>
+          <a href="#teachers">Top Teachers</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Us</a>
+        </li>
+        <li>
+          <a href="#admission">Admission</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Welcome to ABC School Dashboard</h1>
+            <img src="https://www.icesusa.org/wp-content/uploads/2020/10/Our-Lady-of-Good-Counsel-High-School-Aerial_GC_4-scaled.jpg" width="100%">
+            <p align="center" style="background-color: yellow;">&copy; ABC School image</p>
+            <br>
+            <p font="Arial">
+              <b>ABC School</b> is dedicated to providing quality education and fostering a positive learning environment.
+              This dashboard provides insights into various aspects of the school, including student information, teacher details,
+              courses, contact information, admission details, and more.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Statistics Cards -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Students</h5>
+                <p class="card-text">Total Students: 500</p>
+                <p class="card-text">Active Students: 450</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Teachers</h5>
+                <p class="card-text">Total Teachers: 30</p>
+                <p class="card-text">Subjects Taught: 15</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Courses</h5>
+                <p class="card-text">Available Courses: 20</p>
+                <p class="card-text">Enrolled Students: 400</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Students Section -->
+        <div class="row">
+          <div class="col-md-12 topper-section" id="toppers">
+            <h3>Top Students</h3>
+            <p>Discover the top-performing students and their achievements.</p>
+            <ul>
+              <li>Shailendra Singh - Class 10</li>
+              <li> OM patil - Class 12</li>
+              <li>Raj Sharma - Class 11</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Courses Section -->
+        <div class="row">
+          <div class="col-md-12" id="courses">
+            <h3>Courses</h3>
+            <p>Explore the variety of courses offered at ABC School.</p>
+            <ul>
+              <li>Mathematics - Advanced Level</li>
+              <li>Science - Physics, Chemistry, Biology</li>
+              <li>Literature - English and World Literature</li>
+              <li>Comerce - finance and accounts </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Top Teachers Section -->
+        <div class="row">
+          <div class="col-md-12 topper-section" id="teachers">
+            <h3>Top Teachers</h3>
+            <p>Meet our esteemed teachers and principals who contribute to our success.</p>
+            <div class="row">
+              <div class="col-md-4 teacher">
+                <img src="https://thumbs.dreamstime.com/b/female-school-teacher-9707714.jpg" alt="Teacher 1">
+                <p>Ms. Tina Sharma</p>
+                <p>Principal</p>
+              </div>
+              <div class="col-md-4 teacher">
+                <img src="https://thumbs.dreamstime.com/b/professor-binder-pen-sitting-desk-portrait-confident-male-classroom-36759166.jpg" alt="Teacher 2">
+                <br>
+                <p>Sachin Yadav</p>
+                <p>Physics Teacher</p>
+              </div>
+              <div class="col-md-4 teacher">
+                <img src="https://image.shutterstock.com/image-photo/this-image-shows-hispanic-male-600w-113629438.jpg" alt="Teacher 3">
+                <p>Mr. Lucky Singh</p>
+                <p>Mathematics Teacher</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="row">
+          <div class="col-md-12 contact-section" id="contact">
+            <h3>Contact Us</h3>
+            <p>Get in touch with us. Submit your queries through the form below.</p>
+            <form>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="query">Your Query:</label>
+                <textarea class="form-control" id="query" rows="3" placeholder="Enter your query"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Admission Section -->
+        <div class="row">
+          <div class="col-md-12 admission-section" id="admission">
+            <h3>Admission</h3>
+            <p>Information about the admission process and requirements.</p>
+            <ol>
+              <li>Fill out the online admission form on our website.</li>
+              <li>Submit required documents, including academic transcripts and identity proof.</li>
+              <li>Appear for the entrance exam if applicable.</li>
+              <li>Attend the admission interview.</li>
+              <li>Once selected, complete the admission process by paying the fees.</li>
+            </ol>
+            <br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p> 2024 ABC School. Address: 123 Main Street, Cityville, State, Zip Code. Phone: (123) 456-7890.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
