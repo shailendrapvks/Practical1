@@ -1,0 +1,129 @@
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git init
+Reinitialized existing Git repository in E:/Demo/.git/
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git add A_practice.html
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git commit -m "first commit"
+[master (root-commit) a5d9a4a] first commit
+ 1 file changed, 58 insertions(+)
+ create mode 100644 A_practice.html
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git add A_practice.html
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git commit -m "second commit"
+[master 9ae59c6] second commit
+ 1 file changed, 1 deletion(-)
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git diff HEAD^ HEAD A_practice.html
+diff --git a/A_practice.html b/A_practice.html
+index 0b765d4..995d58a 100644
+--- a/A_practice.html
++++ b/A_practice.html
+@@ -43,7 +43,6 @@
+             <div class="row">
+                 <div class="col-md-12">
+                     <h1>School Dashboard</h1>
+-                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAvAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAAIEBQYBB//EAEIQAAIBAwMBBQUEBwUIAwAAAAECAwAEEQUSITEGE0FRYRQicYGRMlKh0RUjJEJiscEWM3KC8AclNENEg5KiU+Hx/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACMRAAMAAgICAwEBAQEAAAAAAAABAgMREjEEIRNBUSJhFAX/2gAMAwEAAhEDEQA/ABCPiu93V6+gXIPQfjQjo1yOAFz8/wAq9leVif2ea/HyLtFP3XoaQUVd2+jSsx7892McEYP4UVuz74ylx83jIH1Bo/6sW+xrx8mujP7V8RXNgq6fQbhejwt/mI/mBQW0e8HSIP8A4GBq1nxvqiHitfRVFKWyp72F0n2reX/xJqOybThuD5GtFSfTIctdoBjFFicA7XHu0itLZ6U37Eh8kUR5RwKAVZTwaIExXcUaDYE5PWm7aPsrm2mJgglFRAaW2ujIpD2EDMmMdKDIzsTk/WiZ4puM0khtgcGkBRtlc2UxAgMkVxk940cLzS2ZOaBgBGvlTgnoKMEpCMetJjJ2ja9d3jmNIsvtz7lw4H03Yq3W+v0X3ra6bB6Ahv5qa8h06+Nm/LESEZOMZI/rW1sr9ZydkoACZyDyfWvlW2j6HHSpezVnV2hCmWOZSRnBhHA9cEUotatnYAtESfONh/LdVAtzdJytzMozwFkIFEXUbxnG6bf571Vv5g0cjT40zSLqUJ/ejI9JsfgwFFFzbyj3lcj12MPwJrNC+c8yQW5/7AGf/HFEQiTn2GAg9NrsP6mqVMlxBpAYmUFZGX/tso/AU1grDHtMZHk5AH41SQ+yxgyOWjeM7tomA6fGqua+1BbyJrWeUwCLmLvC+XJ/h8gB9auboxqINU2nRyni2tn9VRRn6YqNLpEQ5NmyH+FyPzqBpNxLOJDf+5sOF3Qly3mTuXirm3ng6bpRgfuiZf5cVaz5J6ZHwQ+0VUmkQY4Fwp+AYVGfTEBwl2mfKRCv51o/aYc/8W6j7rgEfiufxrvfRSf9TbOPJlH5itZ83Kvsyfh439GXOmT/ALjQyf4JR/XBoE1rNB/fRsmehI4Na9rFZBn2a2k9UYr/ACzUeXSYHHNtMP8ABIpx9SDXRP8A6Nb/AKRlXhLXpmU2GubavpdIt8/q7mRD5PGePw/rQG0ab/lz2z/F9v510z52Gv8ADmrw8i+io21zbVo2k3q/9MzDzRgwqO9pNH9uJx/lNdE5sddMxrFc9oh7aVSO6OaRt3A6VommTpkfFIKegBo4TwwQacImHVuKGCAiJ/u0QRt92i4xXOPvNUstHkDXC2czIrrOTj3mUgqeR51Pju+7AmaZ08Nir7uc8ioaW0MxMMEMs+0czlsM3lgHoPWpyW9y8yxFw2Fz3UmPeHy/10r5xpHpl52fur68vS9xJMFwDluFxWkvpvYbd5yclQABjxJA/maxejXs1vqipcNiOM9ASwVR5Ka1faR7STQJJIzPIGMRwVCljvXxzWTXs68NfywFlqBeFjM+6YyHIjXJHpnoPkPnVmrXMkZJtG2BMqZ5GIz8CQKzltcTww90kndKckBPX161Lv7NBDaTu0rd+Y8gksMl8Hx6EYrWYdPSC7USqZbRPOIn/a7KDJICqU6/5VP86bcSMbVv96NKU6IocZ5HjjFU+mkC1faOBK4AI5HSpGR3Te6MjHT4ioctVo1T3HIvre8s1Q7tYdS6Y2hHOGP5US0nt5WPd6tKxHJxG3AqmtEYeynuWybzr34/h5x/Su6RnfMDHsynC96r55Fb5MCmeSZzYvIqq4tGgEqqcLq8g+KSf0oyXBBUfpiBunuyFhkf5hVOOGLYwB5g0yWPfPu9nuJP2dvfjG4DhuOnX51jijnWjfPk+OeRe7rmRz3YsLgZ42NHnHyINEW7voDh7a5jA8UkLD/2yKzkEMSzH9XOCI4v7xAoGUBqXCzxsDFK6c9VJHlSyQ8dcQxWssctFyby1vYwt0kbkkgblMbj4HpnnzFQrmZLNu7D3BUgEMJPjxg9KgQXt64X2ow3UPHLqN4yM/aXn61y4kSTb3Le6owVfkqfLNFTU9hjc17RLGohVJW5kVvDfArfiOalx6wwGUuoiueAXcHH+bIrPsJQSCFIPlSw2z7PHH9ajbNOKZopJ5LvBYRkAZypRs/SuOoVMbTULR5QjONvVP61YGQ+Ve74b3hR4nlpTlaRFYA/umhNG5qWzZ/dFJRu8hXXs5SF3T0wpViY2AyOlMMG45C5+dPkg0eO3Zto+7ka7uIztONpDZPHJPl5DFAsLqWQCJ3Yp1AC4JHHiaDMI3UT5CW5wFjEpZjipWkpNe3AtVMmxSMqkO5tvToPL5V840eolt6LvQdMnvr6P2dXiG4BpphvEXHOBjB8Mc+deirpGj3elpb6lqEyz5VpGi8drAjA2HyFVtjayWdqsGOF6DZt289Mf1qWLW6kt2nERMaA73+n51k6bfo7oxKV2Q2tez+m6rJaxlr9BCsh7wDMeSQAOnlVlHqemKgC6fuCY2hinHj5VkbD2i97TauYIpJe77uMYQnAA/8A2r6LTr51YrazckfZiPlTdNMaxy17LaG+hdGa20NmQZ5WMEZ+S/CoOr6tFNp00KWMce/ADqw494c8CpmltqdjbPCmlyvvJbc2RjjHl6VU6jpl5Bp7yTWzoiFclsfeFJU9g5nTLC3voluY7pbUMywCMR94NnQZbG3OTt86sDryodv6Mh6DOHxnp6VWDRb9oo2js5MFAQ2V5G340eTRNTLcWjngeI9PWirp7HOOCyl1V0RZZNH2RkD3mJwcjz20MaxbOSTpsRYe7yR0/wDGnXS6tdWK2jaayqoUBgeuB8ahRaTqAD7rR+vl60uTXQuEPsmJqdjKwV9NzkcBdpzgceFOkl0v9/SpUPiNmD+BqLa2V9b3KS+wzt3Z3bSp5wKuRrN6re/o9xj+Hdgf+tG39i4ylqSrWLs+VwLaeLI8AR0HxpwtdClVQt3PHtGBkHzJ67fWpd3q3tVvLC2nXEZYbdzDp+FZ7umVHJUjjg4odN9hESv8LUaHYzD9l1ONvTcpP0qHNo0sZkiUPIY8ElY/PPTnn5U2Q2Z02MKFN33h3Efd58fpTbWSRZ0jjneFWYKSD0H8qXJfZXF9pnbCFUkYBiWwQVKFSOfWp2w+VRU1Epd99dBpgEaPCqBnngn6fjUe67VaVBfR2s/eQPIARuGV59a9bwvJhQsb7PK83Bkdcyx7s+C0hC56Rk0y91K2s0R9xlD+MPvDHnmg2uvabPJ3Zu0icnCrJIBu/wBeVd7yyn2cHGvwk9y+eUNP2OviOeeaCNY05pjEt4hIOC2crn41Bm7R2CSsscbS4OCc4wfKlWWddlzL30eQaRHZma2SM3EkrHLp3K5PH7hz5dcjy5r0/RdRa2jZLGGe0GMtuAQlvLAP51K7GdmFn7OW0ySPAzR7T39p3bnBI5UMasdJ0S1nv9UilnZmt5kQmMAclN3Oc/eFfP3ts9zFxlb2R/0te8/t0w5x9o+dPHaK7igED4lkl3BZS/K8ccY9POrX+zVlk/rrj6r5/Co112ftI7mxAkuCHmKNyOP1bny8wKhbRq7jRgba8nPaDW5ZLtlMkyqGDY3EKKfq2p6sdLS8jc27wkRsiMTvUE4ZvU5HPwqLqPZ8Xfa6+062eXa10AW44AUHJ44r0G37I6fcWstq0k2x49hIYdCMeVNp7M5te9nlz6/2i7phDDPJ7w5w3I556/Cnw6prk91HFeW8ggM20sVIBTnn8BR9T7Hanb9sMpbvJZRzxbZty42gjccZzgY6VHv9DvbXtabp4W9kSUsJcjBGB65863UT+HM7r9NLFqdpJMIEmJccbfPAqNDd3ft1/HJMe7juCkYJC4XAIH41d9kuyytJNe3ySxq7ExgkZOfH4fnUPt1odlZ3eltFp17dm4mzK0MpAXlRlgEOeB6dKziVz9m+XJvHpdmdvta1q3efuNvuOoUmZeQd3mR5D61N7JatqV/qNwl3cFlEattzwCSOmOvU1U3GlW/c6iG7P6s5S6iVf1zHcD3nI/VdB8+vWrnsTp8dxJqItFdZ1tEwgblW9zgnHh8PCryQtejPFke/ZftdytbyizmaS4Vc7Y3JI6DjBqH+kdbiilk/awY1JCnfzgZ86n/2Rdext2kIlfUZEJj3uByWHGT8D41SX/ZrXB2Q0a3tYXXUY5pzdD2hR7rM5XnOD1WlimdPkgzZK5LREHbDXhqlpA11JEkkkYZDnIBbB6mtHqnam7sYJAl+zTgDZCXyWz6c1UXHZ2CDX9ORg6Pm2Lgtuw3BPPyNW1/2Jigl1O9u1kmVnURKCNz+8PQ+GahyuRrGT+PZm0/2jazIyILSFmYbsTKPx92tBfdpDb6ZFd3Gn283eBcpGmMEgnw+FVtl2YtP0TZzoLiCV94YP9rAIxngVeSdlTJ7NIbyYQezRlAAOG5Bz5+GKmloc369g7S6s7+3jmktJrYkfYRlfHxyetYbtyYRq4EJkMRtky0gAOdzeXyr0zTuy0ckW72pwF4H6vOeTnxHnWb7WdlrqLXYri1V7oLbgHG1AeW4IJPnSW17Qs1Ko0YCG4mgsHiimOHxlQ3AHX8zUZY7ueEyiGRkLHoOgFbGbSLtxDL7E4AIyfdbknHu/wBc0650O/Xaq2ndq5Cgevhxn0qnkv16ORJIx0MUkK96rcgcccinyXc5bnJIGCfWtVZdntTtFKezs277WHxj5VEm7NX7yMVgcD+FeKqbrb9Bou4+1mo6LbQ6bY2/dqg91lQsDk5yM/Ou6N2vvdImvXntJLqS/nE7s4II90Ljj/DWSbs9fLIO5voyh6OxO76Yq0tNOvYgPadTeQjoB5fMGsXSn2mHyNGr1ntjrAvLZtOiiFu8MbuGG7Y5+0rH0p+q9qLs9obSOCSA6ejJIZAMhWx7wJ6+J+oqh7h+7wGDn+I9aHJA8JAkQgtg+YPwqFlYfLRqOy9wLrtJrVwiFVupQ8IbqygAVotQ1K+0aW3nisWuLaWTbcBMh4l6lxjqAM8YrzpUaORZEfu3U5DKeRV8dQl1CIJeahIoEZQHYjIxP3gQfr/KrnKm9MuMm+yBZ6bpHanto+pWmovFdpOsj2klv1CFeN+cEHHX16UztX2LmsNYudb75yHffsEHC9Bgtn55x40jaiJ1kk0u/Fz3rE3Cwrvdd2chkJDcdOtaTUF2dm9RXvbh0MMTBbhFDAlvNePAV08vovgu0aS0/wCCtjg/3S+HoKq+1HZmbtBJp8kOoG0FqxZgIt5fkHGd646evWrWzINnb5P/ACk8fQUVm+nrWW2mU1tGCk7CXmmzm6XUpbsSX8MrRez7diAvkfbP3hnj93pW0uook7Ud9bxIsPsIQyRpgbg3Q48cVIMgH2uKGXjwBuHFU7bRKhIZq2nwa3p1zpk87Qx3SbDIqglOQc8/CqS9/wBnOlz6Bp2j/paRVsZJHEyxpufeSTkYx41dGRPCQCl3gP8AzR9KJpyFSqKC+0GeHVrL2ZTLa27QgSbhnC4ycVrJ+5uIJYWYgSIVzmq9pQOAwPoK6HY9OKn3vZWvWirGgG00+2s7OQyLFvy0rDJyR5ACrmNP93QWzkBkVQT6gUMbvF/xpYc/vZFD2wRSdo+z97qklo1jq7WYtw2VQsNxPQ8dMfOswvYbtFGoH6dEzDPO9+T8zXoaqR4gV3Bz9rFLQmtmPtNL13TNNWB4ReSId3eF8luc4xmqq6j7R980ns91EC2QioGC444r0bkeOa7kjHp0qk6I4I83tdS1m2L+3WN5NHgbcQgY8/Colz2wuu8At4ZkUDBDR5OfrXqRkOOSKYyxucvGjHzK5qldA4KUdmLFerzMfVh+VGj7N6djB7z4b6yTaxqp5W5kUH4Uw6tqjfbu5jnphsZ+lcvyR+Ec4NmOzumKMd2x9S5zT/7P6bt/uWOPAyN+dYU6hfyKQ93NgfuhiaCL673Fe/mPzo+SPwXySb2XRNNMbCOMRkjiQMSR9TioUWl21pIzZgu1OPclwrL8D0Pz+tZQSXGCe/8AePXLEYoEm8jP6wZ8ck5o+WfwHa/D0CDVtNt4xGkyWyrwYXbZ9PD6ZqF2k1W0uNGuoI7hWkdVUDJP7wrCs07Aqw3IRym0HJp9pbKsgMlzi3bO63cMSh8MHpirnLtgsjPQLbWbEW0KmbkRKOhPQVw69p6DmY/KMmsNM8O4tBkDxC56/Oh97MQQu74VFZXv0P5WjdDtHYNyzPx/Aa63aPTAuS8nw7pvyrDxPI3Mhx4/CitPFHHuDkt/DzS+Wg+V/Rr/AO0WkN1uWQ/xRN+VFTXtLIG29Q84ACN+VY+w0i61chogY4P/AJSdv8uta3StEt9OVdq95KMfrH5Py8q1l0y5pssw6sAUY4PTiu9fE/M0VRjpzXcGtC9gV+vyp3u+R+Vdzk48qXP3QfjRoNiBH8X1rocU0k/dX60wn+EfKnoWwpcAEkgAdSTTfaIsZ76PH+MVA1cb9Lu1KHmFvD0rzwG2kBRo3OPHcRg/IiouuInaXZ6rkYzxim7l+8PrXlcjSe7+ulVF8ATQCz5+1IfXpWfykPMiYj+9tJPHrSKKR/eY8AOtO7sGMtgbV8zXFZftRLuGcelcvs5xqxNuOJD1xxzXRGwLctnwrqTkNnBBHOK6C0pJB4+9j0oGJ4pcc5OPE1wRO3O0kemRXXVyTwSAOATgfKnOSmftDyGfGmPQwI4bBbkE5GaMqLxuIDeIPhQgY2XDyZIORtOajy3LLuIKg00tj0TX2JwCozyQBk0KWeFU90knPIHWn6bplzq0mbWJyv70pYhR9etbDSuydnZnvLz9pl8dwwoPwrScbKnG2ZXT9Lu9Uf8AZ4XMXjI+AorVab2XtLZB34WeQdeMKPTFXyQxogRFCqOABwBTiOfGt5hI1UJAkt0RAq5VR0A6Cu7eaeaa2B41ZQuniaYzeRprtjA6k0gCfAUAcHBruSRSKsPKlhsdKaBjSfh9KRzj92kd3kabu46N9KYhxDFSOMEc5rzq6jjhvJI5doaMnoeM8/8A1XogdR1yPiKwuuWixanNh2zI2QG5GD5Vll6IyL0V1ztTgYOfLwoQdecRZ56g4ozIxTBJ6HLDoPlTAmfsyRgeornZzjVSSTHuD1OMYqVHbv3J2scHrkePhxTjdDae7AI4HB8aUV0Uch1Vs84PjUaNEhrwgZIPvDqDwMelPHdRQ7nbD4JwRxQ2uZJm27AFzgc4Ph+FAnkldGdunKgD/XHWnoPQdrktGwVxgZ4+VQ2V5CoAUc8bj68VPsLG4vWSG0hLyDGSOQD6mtTp3ZGKNBLqbmWUHIRD7o/OqUNlqdmVsNIu9Sk2WsbkLwZANqjHrWq0vsfZWrd9egzy9dufdH51pY1VY1WNQqgfZAxSrecaRrxSFGBGgSNVRR0VRgCug4pAZGTmmlsdDxWgx2TTS2K4SvlXCVHh9KAO586a7HHA58Ka8gHTPzrg55oASqAcsct6dBXT0rgArpA/0aBDQSDXTyKW3FcNMBmKXPlx50uM0w5BPP40AFGPGsv2ytyj28ynKkFCD8a0yE/GqftfAJtN34AeI7gTj6VNraJtejGKEFvynuHxyePlQzEZPeALCiW5cMsTlTzluPD6+lKW3lLAg8Ece8K5tHNobcv7LCrQqoLcnIoVg7TXRz7uePdpUqCyekKDftypy3IPlirjslo9pqF/tuQ5RcnYDgHA4z9aVKnJcdm5FtBYxLHawpGmeijHjSbjilSrdG7GdGA8KcRSpVQjhPhTGFKlQM4a6elKlQBH+1Nz4UQ9KVKgR3wrlKlTEczS60qVADSaYetKlQA7AHhUPWkWTTJtw6ClSpPoT6MJHjG8jLL0J8ODQ3lYMQQDjjJpUq5zlP/Z">
+                     <p align:"center">ABC school image</p>
+                     <br>
+                     <p font="Arial">
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git log
+commit 9ae59c6efd51b7b47ff8ef807137abfc40cf3ec5 (HEAD -> master)
+Author: shailendrapvks <shailendrasingh93373@gmail.com>
+Date:   Thu May 9 22:38:57 2024 -0700
+
+    second commit
+
+commit a5d9a4ae98304424820eb006113610bf584531fb
+Author: shailendrapvks <shailendrasingh93373@gmail.com>
+Date:   Thu May 9 22:37:05 2024 -0700
+
+    first commit
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git remote add origin https://github.com/shailendrapvks/Demo.git
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git push --set upstream origin master
+error: src refspec origin does not match any
+error: failed to push some refs to 'upstream'
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git push --set upstream origin master
+error: src refspec origin does not match any
+error: failed to push some refs to 'upstream'
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git remote add upstream https://github.com/shailendrapvks/Demo.git
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git push --set upstream origin master
+error: src refspec origin does not match any
+error: failed to push some refs to 'https://github.com/shailendrapvks/Demo.git'
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git push --set-upstream origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 7.20 KiB | 1.44 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/shailendrapvks/Demo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git push
+Everything up-to-date
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ status
+bash: status: command not found
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-OHCG77C MINGW64 /e/Demo (master)
+$

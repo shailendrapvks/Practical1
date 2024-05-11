@@ -1,0 +1,10 @@
+npm init
+show databases
+use student
+db.createCollection("profile")
+db.profile.insertOne({name:"xsw",email:"jass",city:"nmn"})
+npm I mongodb
+npm I express
+mongodb.js
+index.js
+node index.js
